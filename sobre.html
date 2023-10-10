@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link do Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!--Link do CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sobre | Alliance - Soluções Digitais</title>
+        <!--Favicon-->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- header -->
+    <header style="background-image: url('img/background-sobre1.jpg');">
+        <!-- container -->
+        <div class="container">
+            <nav>
+                <a href="home.html">
+                    <img src="img/logo2.png" alt="Logo" width="160" height="120">
+                </a>
+                <ul class="ul">
+                    <a href="home.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="servicos.html">Serviços</a>
+                    <a href="contato.html">Contato</a>
+                    <a class="btn" href="PHP/login/login.php">Login</a>
+                    <div class="close-icon" onclick="closeMenu()">
+                      <i class="fa-solid fa-xmark"></i>
+                  </div>
+                  </ul>
+                <div class="menu-icon" onclick="openMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>Sobre</h1>
+            </section>
+        </div>
+        <!-- end container -->
+    </header>
+    <!-- end header -->
+    <section class="sobre">
+        <div class="container">
+            <div class="sobre-text">
+                <h1 style="margin-top: 25px; font-size: 38px;">Confie em quem sabe</h1>
+                <p>
+                No mercado digital desde 2022, nossa abordagem e técnica é sempre visando o organico de comunicação e tornando nosso trabalho
+                o mais humano possível!<br> Com uma grande equipe, dividos por setor e tarefa, temos um método de trabalho efetivo pra realização
+                de obrigações e afazeres.
+                </p>
+            </div>
+            <div class="sobre-img">
+                <img src="img/sobre.jpg" alt="Sobre">
+            </div>
+        </div>
+    </section>
+<!-- faça mais 2-->
+<section class="faca-mais">
+    <!-- container -->
+    <div class="container">
+        <div class="faca-mais-img">
+            <img src="img/security.png" alt="">
+        </div>  
+        <div class="faca-mais-text">
+            <h1 style="margin-top: 60px; font-size: 38px;">Trabalhamos com segurança!</h1>
+            <p>
+                Dentro das leis de LGPD, saberemos manusear e construir os conteúdos do seu site com base na sua necessidade
+                e com todos os cuidados possíveis pra que você esteja com sua identidade digital criada e sem se preocupar!
+            </p>
+        </div>
+    </div>
+    <!-- end container -->
+</section>
+
+
+<!--texto-->
+<div class="container" style="text-align: center;">
+    <h1 style="font-size: 37px; margin-top: 80px; margin-bottom: 40px;">Perguntas frequentes</h1>
+           <!-- <p style="font-size: 18px; margin-bottom: 80px; margin-top: 10px;">Conheça os melhores serviços pra você</p>-->
+    </div>
+    <!--end texto-->
+    
+<!--acordeao-->
+<div class="acordeao"></div>
+
+<style>
+    .collapsible {
+      background-color: #002a85;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 55%;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-left: 300px;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+    
+    .active, .collapsible:hover {
+      background-color: #0c47c59c;
+      transition: 0.3s;
+    }
+    
+    .collapsible:after {
+      content: '\002B';
+      color: white;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+    
+    .active:after {
+      content: "\2212";
+    }
+    
+    .content {
+      padding: 1px 5px;
+      text-align: center;
+      max-height: 0px;
+      margin-left: 300px;
+      margin-right: 307px;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: #ffffff;
+    }
+    p{
+        margin-left: 3px;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <button class="collapsible">A Alliance Shop é confiável?</button>
+    <div class="content">
+      <p>Sim, é por lá que você visualiza nossos produtos e orçamentos!</p>
+    </div>
+    
+    <button class="collapsible">Como posso saber mais sobre a empresa?</button>
+    <div class="content">
+      <p>Você consegue encontrar informações na nossa página <a href="servicos.html" style="text-decoration: none;">serviços</a></p>
+    </div>
+    <button class="collapsible">Qual o nosso diferencial?</button>
+    <div class="content">
+      <p>Uma empresa séria com valores e ideais prósperos pro mercado.</p>
+    </div>
+    <button class="collapsible">Enviei mensagem pra vocês. Em quanto tempo serei respondido?</button>
+    <div class="content">
+      <p>De 1 a 3 dias, nosso time de suporte é altamente qualificado pra respostas em médio e curto prazo. Te damos a resposta necessária e essencial pra sanar todas as suas dúvidas conosco!</p>
+    </div>
+    
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+
+
+</div>
+    
+<!--end acordeao-->
+
+<!-- end faça mais 2 -->
+   <!-- footer --> 
+   <footer class="footer" style="margin-top: 80px;">
+    <div class="container">
+        <div class="links">
+            <a href="https://www.facebook.com/colegioflamaRj" target="blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/colegioflama/" target="blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/colegioflama/" target="blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>Desenvolvido por Alliance Dev Studio</p>
+    </div>
+
+
+</footer>
+<!--end footer -->
+    
+    <script src="main.js"></script>
+
+</body>
+</html>
